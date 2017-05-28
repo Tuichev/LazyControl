@@ -3,8 +3,7 @@
 
 int main()
 {
-	system("color 02");
-
-	ServerManager::getInstance();
+    system("color 02");
+    ServerManager::getInstance();
     return 0;
 }
