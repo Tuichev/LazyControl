@@ -8,15 +8,14 @@ import java.net.Socket;
  * Created by Vlad Tuichev on 21.05.2017.
  */
 
-public class LazyServer
+public class LazyClient
 {
-
     public static final String LOG_TAG = "LazyControlApp";
     private String mServerName = "169.254.3.77";
     private int mServerPort = 8888;
     private Socket mSocket = null;
 
-    public LazyServer(String ip)
+    public LazyClient(String ip)
     {
         mServerName = ip;
     }
