@@ -7,7 +7,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
-import static com.vladtuichev.lazycontrol.LazyServer.LOG_TAG;
+import static com.vladtuichev.lazycontrol.LazyClient.LOG_TAG;
 
 public class MainActivity extends AppCompatActivity
 {
@@ -16,7 +16,7 @@ public class MainActivity extends AppCompatActivity
     private Button mButtonVolumeMinus  = null;
     private Button mButtonPowerOff  = null;
     private Button mButtonClose = null;
-    private LazyServer mServer = null;
+    private LazyClient mServer = null;
     private EditText mEdit = null;
 
     @Override
@@ -42,7 +42,7 @@ public class MainActivity extends AppCompatActivity
             @Override
             public void onClick(View v)
             {
-                mServer = new LazyServer( mEdit.getText().toString());
+                mServer = new LazyClient( mEdit.getText().toString());
 
                 new Thread(new Runnable()
                 {
